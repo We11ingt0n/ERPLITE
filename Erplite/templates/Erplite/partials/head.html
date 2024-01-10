@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Roboto+Slab:wght@900&display=swap"
         rel="stylesheet">
-    <title>Erplite</title>
+    <title><- - - - ERP-Lite - - - -></title>
 
     <style>
         :root {
@@ -74,7 +74,7 @@
         }
 
         html {
-            font-size: 62.5%;
+            font-size: 55%;
         }
 
         body {
@@ -97,12 +97,18 @@
         .container {
             max-width: 144rem;
             margin: 0 auto;
-            padding: var(--spacing-gutter-medium);
+            padding: 2rem;
         }
 
         .main-header-container {
 
-            background: rgb(4, 113, 133)
+            background: rgb(27, 153, 170);
+        }
+
+        .main-header-container2 {
+
+            background: rgb(32, 177, 199);
+            border-radius: 0.4rem;
         }
 
         .logo {
@@ -127,16 +133,18 @@
             border-radius: 0.4rem;
             position: relative;
             transition: all 300ms ease-in-out;
+            border-radius: 10px;
         }
 
         .search-input,
         .search-button {
 
             border: none;
-            background: none;
+            background: rgb(195, 227, 236);
             outline: none;
             padding: 1rem;
             transition: all 300ms ease-in-out;
+            border-radius: 10px;
         }
 
         .search-input {
@@ -148,25 +156,25 @@
         .search-button {
 
             position: absolute;
-            top: 0;
+            background: rgb(255, 255, 255);
             right: 0;
         }
 
         .search-button:focus {
 
-            outline: 1px solid var(--color-primary);
+            outline: 1px solid var(--color-white);
             background: rgba(0, 0, 0, 0.5);
 
         }
 
         .search-form:focus-within {
 
-            border-color: var(--color-primary);
+            border-color: var(--color-white);
             background: var(--color-white)
         }
 
-        .search-form:focus-within .search-button {
-            color: var(--color-primary);
+        .search-form:focus-within {
+            color: var(--color-white);
         }
 
 
@@ -175,6 +183,7 @@
         }
 
         .main-content-list {
+            padding-top: var(--spacing-gutter-large);
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
             gap: var(--spacing-gutter-large);
