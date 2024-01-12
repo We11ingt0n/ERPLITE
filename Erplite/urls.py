@@ -1,9 +1,10 @@
 from django.http import HttpResponse
 from django.urls import path
 
-from Erplite.views import home
+from . import views
 
 urlpatterns = [
-    path('', home),
+    path('home', views.home),
+    path('formulario', views.formulario)
    
 ]
