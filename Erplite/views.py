@@ -9,3 +9,7 @@ def home(request):
 def formulario(request):
     
    return  render(request,'Erplite\pages\cad_nfunc.html')
+
+def login(request):
+    
+   return  render(request,'Erplite\pages\login.html')

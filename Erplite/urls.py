@@ -5,6 +5,8 @@ from . import views
 
 urlpatterns = [
     path('home', views.home),
-    path('formulario', views.formulario)
+    path('formulario', views.formulario),
+    path('', views.login)
+    
    
 ]
